@@ -1,0 +1,32 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="canvas wrapper">
+
+	<header class="bk-header">
+		 	{{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+	        <div class="brand">
+	            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+	            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+	        </div>
+	</header>
+
+	{{widget('responsiveslideshow', 'thisunqiuewidgetname', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': false, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'}]})|raw}}
+
+	<div class="main wrapper clearfix">
+	    {{zone('main')|raw}}
+	</div>
+
+	<footer class="bk-footer">
+	    <div class="footer-left">
+	        {{widget('profile', 'email', { 'profileType' : 'email' })|raw}} 
+	    </div>
+	    <div class="footer-right">
+	        {{widget('profile', 'socialicons', { 'profileType' : 'socialicons' })|raw}} 
+	    </div>
+	</footer>
+
+</div>
+
+{% endblock %}
