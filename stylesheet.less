@@ -398,7 +398,7 @@ div.widget .extendednavigation ul.align-left, div.widget.extendednavigation ul.a
 	}
 }
 
-.widget.responsiveslideshow .content-wrapper .title, .widget.image span.image-title {
+.widget.responsiveslideshow .content-wrapper .title {
 	padding: 15px 30px 0px;
     font-family:@font-swatch8-font-family;
     font-size:@font-swatch8-font-size;
@@ -413,6 +413,24 @@ div.widget .extendednavigation ul.align-left, div.widget.extendednavigation ul.a
     @media @mobile {
     	font-size:bkscale(@font-swatch8-font-size, 0.6);
     	line-height:bkscale(@font-swatch8-line-height, 0.6);
+    }
+}
+
+.widget.image span.image-title {
+    padding: 15px 30px 0px;
+    font-family:@font-swatch3-font-family;
+    font-size:@font-swatch3-font-size;
+    font-weight: @font-swatch3-font-weight;
+    line-height:@font-swatch3-line-height;
+    color: @font-swatch3-color;
+    letter-spacing: @font-swatch3-letter-spacing;
+    @media @tablet {
+        font-size:bkscale(@font-swatch8-font-size, 0.8);
+        line-height:bkscale(@font-swatch8-line-height, 0.8);
+    }
+    @media @mobile {
+        font-size:bkscale(@font-swatch8-font-size, 0.6);
+        line-height:bkscale(@font-swatch8-line-height, 0.6);
     }
 }
 
@@ -879,6 +897,33 @@ ul.twitter {
 
 
 
+
+/* ===============================
+  BLOCKQUOTE
+   =============================== */
+
+blockquote {
+    background-color: transparent;
+    margin: 20px;
+    &:before {
+        color: @color-swatch3;
+    }
+}
+
+
+
+/* ===============================
+  DIVIDER
+   =============================== */
+
+hr.line {
+    background-color: darken(@color-swatch1, 10%);
+    height: 1px;
+}
+
+
+
+
 // -----------------------------
 // Blog posts list
 // -----------------------------
@@ -1098,7 +1143,7 @@ footer.blog-post-metadata time {
                                 color: @color-swatch3;
                             }
                             h3 {
-                                padding-left: 25px;
+                                padding-left: 35px;
                                 color: @color-swatch3;
                             }
                             .menu-item-price p {
@@ -1628,7 +1673,6 @@ footer.bk-footer {
     }
 }
 
-
 .footer-right .widget.profile {
     @media only screen and (min-width: 769px) {
         text-align: right;
@@ -1637,6 +1681,9 @@ footer.bk-footer {
         text-align: center;
         margin-top: 10px;
     }
+}
+
+.widget.profile {
     form fieldset input {
         border: 1px solid darken(@color-swatch1, 13%);
         background-color: @color-swatch2;
