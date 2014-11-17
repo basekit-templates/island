@@ -5,7 +5,11 @@
     "tags": { "en": ["clean"] },
     "pageTypes":["home"],
     "templateType":"standard",
-    "images":["/images/feature-bg.jpg"],
+        "images":[
+        "images/gallery/1.jpg", 
+        "images/gallery/2.jpg", 
+        "images/gallery/3.jpg"
+    ],
     "colorSwatches":
     {
         "Swatch 1": {
