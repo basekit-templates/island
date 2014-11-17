@@ -329,7 +329,6 @@
 div.widget .extendednavigation ul.align-left, div.widget.extendednavigation ul.align-left {
     @media only screen and (min-width: 768px) {
         width: 100%;
-        margin-bottom: 25px;
     }
 }
 
@@ -723,7 +722,9 @@ a.basket-summary-empty-cta.btn,
     border: 1px solid darken(@font-swatch7-background-color, 3%);
 }
 
-
+.widget.profile .bk-profile-socialicons a {
+    text-indent: 9999px;
+}
 
 
 // -----------------------------
@@ -741,7 +742,7 @@ input, input[type='text'], input[type=email] {
     -webkit-appearance:none;
 }
 
-input, input[type='text'], input[type=email], textarea, select, .signupform fieldset input, .blogsearch form input, .signupform fieldset input[type=email], .blogsearch form input[type='text'], .widget.profile form fieldset input {
+input, input[type='text'], input[type=email], textarea, select, .signupform fieldset input, .blogsearch form input, .signupform fieldset input[type=email], .blogsearch form input[type='text'] {
     border: 1px solid darken(@color-swatch1,10%);
     background-color: transparent;
     height: 45px;
@@ -1581,8 +1582,20 @@ footer.bk-footer {
     @media @tablet {
         text-align: center;
     }
+    .flex-item {
+        max-width: 50%;
+    }
 }
 
+@media only screen and (min-width: 768px) {
+    .footer-right .widget.profile {
+        text-align: right;
+        form fieldset input {
+            border: 1px solid darken(@color-swatch1, 13%);
+            background-color: @color-swatch2;
+        }
+    }
+}
 
 
 
