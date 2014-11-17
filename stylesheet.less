@@ -213,15 +213,21 @@
 		ul {
 			li {
 				padding: 0;
-				a, &.folder .text {
+				a {
 					padding: 9px 0;
 				}
+                &.folder .text {
+                    padding: 9px 20px 9px 0;
+                }
 			}
 			li.folder {
 				margin-right: 0;
 			}
 			li:hover ul {
 				margin: 0;
+                li .text {
+                    padding: 9px 0px;
+                }
 			}
 		}
 	}
@@ -248,7 +254,7 @@
 			padding: 0 20px;
 		}
 		a.pull {
-			top: -25px;
+			top: -35px;
 		}
 	}
 }
@@ -274,13 +280,20 @@
 			&:hover {
 				background-color: darken(@color-swatch1, 5%);
 			}
-			a, &.folder .text {
+			a {
 				padding: 9px 20px;
 				color: darken(@color-swatch6, 9%);
 				&:hover {
 					color: darken(@color-swatch4, 10%);
 				}
 			}
+            &.folder .text {
+                padding: 9px 35px 9px 20px;
+                color: darken(@color-swatch6, 9%);
+                &:hover {
+                    color: darken(@color-swatch4, 10%);
+                }
+            }
 			ul li {
 				border-bottom: none;
 				a, &.folder .text {
@@ -331,6 +344,18 @@ div.widget .extendednavigation ul.align-left, div.widget.extendednavigation ul.a
         width: 100%;
     }
 }
+
+/* Center aligned nav */
+
+@media @tablet {
+    div.widget .extendednavigation ul.align-center li.folder .text, div.widget.extendednavigation ul.align-center li.folder .text {
+        padding: 9px 35px;
+    }
+    div.widget .extendednavigation ul.align-center li.folder ul li .text, div.widget.extendednavigation ul.align-center li.folder ul li .text {
+        padding: 0;
+    }
+}
+
 
 
 // -----------------------------
