@@ -1,10 +1,16 @@
 {
-    "name":"Island",
-    "thumbnail":"island.png",
-    "screenshot":"island.png",
-    "pageTypes":["home"],
+	"name":"Island",
+	"thumbnail":"island.png",
+	"screenshot":"island.png",
+	"templateType":"standard",
+    "pageTypes": ["home"],
     "templateType":"standard",
-    "colorSwatches":
+    "tags": {
+    "en": ["photography", "modern", "open", "simple", "creative", "serif", "independent", "art", "portfolio", "design"],
+    "es": ["fotografico", "moderno", "abierto", "simple", "creativo", "serif", "independiente", "arte", "portafolio", "diseño"],
+    "br": ["fotografia", "moderno", "aberto", "simples", "criativo", "serif", "independente", "arte", "portfolio", "design"]
+    },
+	"colorSwatches":
     {
         "Swatch 1": {
             "color1":"#ebe7e3",
@@ -66,7 +72,7 @@
             "color": "@color-swatch6",
             "color-hover": "darken(@color-swatch4, 5%)",
             "letter-spacing": "inherit"
-         },
+        },
         "font7": {
             "font-family": "\"Cabin\", \"Oswald\", Arial, sans-serif",
             "font-size": "16px",
