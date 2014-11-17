@@ -356,6 +356,18 @@ div.widget .extendednavigation ul.align-left, div.widget.extendednavigation ul.a
     }
 }
 
+/* Fixes for nav overlay on editor */
+
+
+.widget.extendednavigation .bk-overlay {
+    @media @tablet {
+        top: -40px !important;
+    }
+    @media @mobile {
+        top: 0 !important;
+        width: 100%;
+    }
+}
 
 
 // -----------------------------
@@ -1186,7 +1198,6 @@ footer.blog-post-metadata time {
     ====================================== */
 
 .widget.ecomproductslist {
-    text-align: center;
     .productlist-display-form {
         @media @tablet {
             text-align: left;
@@ -1205,10 +1216,10 @@ footer.blog-post-metadata time {
         .form-group label {
             display: block;
             text-align: left;
-            color: @font-swatch5-color;
-            font-family: @font-swatch3-font-family;
-            font-size: @font-swatch5-font-size;
-            line-height: @font-swatch5-line-height;
+            color: @font-swatch6-color;
+            font-family: @font-swatch6-font-family;
+            font-size: @font-swatch6-font-size;
+            line-height: @font-swatch6-line-height;
             padding-left: 5px;
         }
         .form-group.productlist-search .btn {
