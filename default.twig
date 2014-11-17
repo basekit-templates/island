@@ -15,27 +15,6 @@
 			 		{{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
 				 </div>
 		</header>
-		<div class="featured-slideshow">
-			{{widget('responsiveslideshow', 'responsiveslideshow',
-				{'duration':'3',
-					'transSpeed': '1000',
-					'transType': 'fade',
-					'showButtons': true,
-					'showBullets': true,
-					'allowPause': true,
-					'allowLoop': false,
-					'showDescription': true,
-					'showTitle': true,
-					'crop': true,
-					'images': [
-					{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},
-					{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},
-					{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},
-					{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'}
-					]
-				})|raw
-			}}
-		</div>
 
 		<div class="main-zone clearfix">
 		    {{zone('main')|raw}}
