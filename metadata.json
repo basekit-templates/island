@@ -101,9 +101,9 @@
         },
         "font8": {
             "font-family": "\"Cabin\", \"Oswald\", Arial, sans-serif",
-            "font-size": "26px",
+            "font-size": "24px",
             "font-weight": "400",
-            "line-height": "38px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
