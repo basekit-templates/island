@@ -3,7 +3,6 @@
     "thumbnail":"island.png",
     "screenshot":"island.png",
     "tags": { "en": ["clean"] },
-    "pageTypes":["home"],
     "templateType":"standard",
         "images":[
         "images/gallery/1.jpg", 
