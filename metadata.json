@@ -18,7 +18,7 @@
             "color4":"#57453C",
             "color5":"#7D7875",
             "color6":"#a9a099",
-            "color7":"#ffffff"
+            "color7":"#f78d28"
         },
         "Swatch 2": {
             "color1":"#e7e9ea",
@@ -27,7 +27,7 @@
             "color4":"#5a6564",
             "color5":"#8a8a8a",
             "color6":"#5a6564",
-            "color7":"#ffffff"
+            "color7":"#f78d28"
         },
         "Swatch 3": {
             "color1":"#f7f3ee",
@@ -36,7 +36,7 @@
             "color4":"#80705b",
             "color5":"#767574",
             "color6":"#80705b",
-            "color7":"#ffffff"
+            "color7":"#2D5C8E"
         }
     },
     "fontSwatch": {
@@ -89,8 +89,8 @@
             "color": "@color-swatch6",
             "letter-spacing": "inherit",
             "color-hover": "darken(@color-swatch4, 5%)",
-            "background-color": "@color-swatch7",
-            "background-color-hover": "@color-swatch7"
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch2"
          },
         "font7": {
             "font-family": "\"Cabin\", \"Oswald\", Arial, sans-serif",
