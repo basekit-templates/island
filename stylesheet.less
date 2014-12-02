@@ -823,6 +823,13 @@ input, input[type='text'], input[type=email], textarea, select, .signupform fiel
     }
 }
 
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
+    @media @mobile {
+        border: 1px solid darken(@color-swatch2,20%);
+    }
+}
+
+
 select {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -948,8 +955,15 @@ hr.line {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat !important;
+        @media @tablet {
+            height: 180px;
+            width: 180px;
+        }
         @media only screen and (max-width: 550px) {
             float: none;
+            width: auto;
+            max-width: 100%;
+            margin-bottom: 20px;
         }
         img {
             display: none;
@@ -960,6 +974,9 @@ hr.line {
             padding-left: 275px;
             text-align: left;
             display: block;
+            @media @tablet {
+                padding-left: 200px;
+            }
             @media only screen and (max-width: 550px) {
                 padding-left: 0;
             }
@@ -1246,7 +1263,7 @@ footer.blog-post-metadata time {
     ECOM - Productlist & Featured Products
     ====================================== */
 
-.widget.ecomproductslist {
+.widget.ecomproductslist .productlist-filter {
     .productlist-display-form {
         @media @tablet {
             text-align: left;
@@ -1256,6 +1273,7 @@ footer.blog-post-metadata time {
             vertical-align: top;
             @media @mobile {
                 display: block;
+                margin-bottom: 0;
             }
         }
         .form-group input {
@@ -1380,8 +1398,8 @@ footer.blog-post-metadata time {
     @media @mobile {
         .ecom-product-variation, .ecom-product-cattag {
             padding: 2em;
-            border: 1px solid darken(@color-swatch1,7%);
-            background-color: darken(@color-swatch1,3%);
+            border: 1px solid darken(@color-swatch1,3%);
+            background-color: @color-swatch1;
         }
     }
 }
@@ -1392,8 +1410,8 @@ footer.blog-post-metadata time {
     @media @mobile {
         margin-top: -1px;
         padding: 2em;
-        border: 1px solid darken(@color-swatch1,7%);
-        background-color: darken(@color-swatch1,3%);
+        border: 1px solid darken(@color-swatch1,3%);
+        background-color: @color-swatch1;
     }
 }
 
