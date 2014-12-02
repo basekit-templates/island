@@ -1020,7 +1020,6 @@ hr.line {
 }
 
 .widget.blogpost .blog-post-item {
-    text-align: center;
     margin: 0 0 2.5em;
     .blog-post-feature-image-wrap {
         background: none !important;
@@ -1037,15 +1036,17 @@ hr.line {
             margin: 0 auto;
         }
     }/* end blog-post-feature-image-wrap */
-    .blog-post-title-content-wrap {
-        width: 75%;
+    .blog-post-title-content-wrap, footer.blog-post-metadata, .blog-post-sharing {
+        width: 70%;
         margin: 0 auto;
         @media @tablet {
-            width: 90%;
-        }
-        @media @mobile {
             width: 100%;
         }
+    }
+    .blog-post-sharing { 
+        margin: 2.5em auto;
+    }
+    .blog-post-title-content-wrap {
         .blog-post-title {
             color: darken(@color-swatch5,15%);
             padding-bottom: 0.8em;
