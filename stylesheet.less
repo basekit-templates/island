@@ -53,6 +53,34 @@
 	display: inline-block;
 }
 
+// ------------------------------------------
+// #Default page sticky footer
+// ------------------------------------------
+
+.bk-default {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;    
+    min-height: 100vh;
+    flex-direction: column;
+     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    @media @tablet {
+        display: initial;
+    }
+}
+
+.bk-default .main-zone {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
 
 // -----------------------------
 // #Header
@@ -1411,6 +1439,18 @@ footer.blog-post-metadata time {
         border: 1px solid darken(@color-swatch1,3%);
         background-color: @color-swatch1;
     }
+}
+
+.ecom-product-variation {
+    margin-bottom:10px;
+}
+
+.widget.ecomproduct .ecom-product .btn {
+    margin:10px 0px;
+}
+
+.ecom-product-go-to-checkout-btn-wrapper.js-ecom-product-go-to-checkout-btn-wrapper {
+    margin:0px;
 }
 
 /* ===============================
