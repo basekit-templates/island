@@ -4,6 +4,7 @@
     "screenshot":"island.png",
     "tags": { "en": ["clean"] },
     "templateType":"standard",
+    "pageTypes":["home"],
         "images":[
         "images/gallery/1.jpg", 
         "images/gallery/2.jpg", 
